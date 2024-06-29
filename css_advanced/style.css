@@ -1,49 +1,302 @@
- *{
-  margin:0;
+*{
+  margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-style: normal;
- }
- nav{
-  display: none; 
-  display: flex; 
-  padding: 0.5rem; 
-  justify-content: space-between; 
-  align-items: center; 
-  width: 100%; 
-  height: 5rem; 
- }
- header,nav,img,.logo{
-  height: 20;
-  width:20;
-  
- }
- .Navigation{
-  background-image: url('Background.jpg');
-  background-size:cover; /* Ensure the image covers the whole area */
-  background-position:top 100px; /* at the top of the page*/
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  font-family: Arial, s;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("Background.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+nav img{
+  margin: 50px ; 
+  display: flex;
+}
+nav ul{
+  list-style: none;
+  text-decoration: none;
+  margin: 50px;
+}
+nav ul li{
+  display: inline;
+}
+nav ul li :hover{
+  color: rgb(194,113,255) ;
+}
+nav ul li a {
+  text-decoration: none;
+  text-align: center; 
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#tittle{    
   width: 100%;
-  height: 1093px;
- }
- .get{
+  font-size: 5em;
+  letter-spacing: 2px;
+  padding: 200px;
+}
+#tittle h1{
   color: white;
-  position:relative;
-  padding-right: 20px;
+  font-weight: bolder;
   align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+  font-family: source 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-span{
-color:white ;
-text-align: center;
-padding-right: 50px;
-justify-content: center;
+#word{
+  color: #fff;
+  font-size: 15px;
   align-items: center;
+  justify-content: center;
+  margin-left: 600px;
+  font-weight: bold;
+  padding:200px;
+  margin-top: -400px;
 }
-
-button{
-  background-color: blueviolet;
+#word span{
+  padding: 30px;
+  font-weight: bolder;
+}
+#word button{
+  border: 2px solid #C271FF;
+  background: #C271FF;
+  border-radius: 50px;
+  color: #fff;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: -200px;
   position: absolute;
-  align-items: center;
+  margin-top: 50px;
+}
 
+#tittle1{
+  margin: 50px;
+  padding: 50px;
+}
+#tittle1 h2{
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  margin: 30px;
+}
+.word1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.word1 div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.word1 img{
+  border-radius: 50%;
+}
+.word1 h3 ,p{
+  color: #fff;
+  padding: 10px;
+}
+
+#wrd{
+  background-color: #C271FF;
+  margin-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+#wrd blockquote{
+  color: #ffffff;
+}
+#wrd img {
+  height: 160px;
+  width: 160px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+#wrd div {
+  color: #ffffff;
+  margin-left: 50px;
+} 
+#wrd div h3{
+  margin-top: 30px;
+  color: white;
+  padding-right: 20rem;
+}
+
+
+.popular h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  font-size: 30px;
+}
+.tutorials2{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height:200;
+  margin-top: 30px;
+}
+.tutorials3{
+  width: 335px;
+  height: 335px;
+}
+.image-container {
+  position: relative;
+  width: 255px;
+  height: 154px;
+}
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.overlay-image {
+  position: absolute;
+  top: 25%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: auto;
+  
+}
+.tutorials3 h3{
+  margin-top: 0; 
+}
+.tutorials p{
+  color:#071629;
+}
+.tot{
+  height: 70px;
+}
+.Philip{
+  display: flex;
+}
+.Philip img{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Philip h3{
+  color: #C271FF;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.ico{
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+.star{
+  display: flex;
+  color: #C271FF;
+  width: 110px;
+  height: 15px;
+  margin: 15px;
+}
+.time p{
+  color: #C271FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.membership{
+  background-color: #071629;
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
+.membership h4{
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member {
+  display: flex;
+  justify-content: space-evenly;
+}
+.member div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  width: 260px;
+  color: #fff;
+}
+.member div h4 , p {
+  padding: 10px;
+}
+.member{
+  font-weight: bolder;
+}
+.membership button{
+border: 2px solid #C271FF;
+background: #C271FF;
+border-radius: 50px;
+color: #fff;
+padding: 15px 32px;
+text-transform: uppercase;
+font-weight: bold;
+margin-left: 630px;
+margin-top: 80px;
+}
+.faq h4{
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 2.2em;
+}
+.faq{
+  height: 500px;
+}
+.faq2{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.faq3{
+  width: 40%;
+}
+.faq3 div h3{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+footer{
+  background-color: #071629;
+  height: 250px;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+}
+footer p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: .7em;
+  margin-top: 0;
+  color: #000;
 }
