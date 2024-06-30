@@ -238,8 +238,9 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   height: 160px;
-  width: 260px;
+  width: 80px;
   color: #fff;
+  border-radius: 50px;
 }
 .member div h4 , p {
   padding: 10px;
@@ -248,16 +249,19 @@ nav ul li a {
   font-weight: bolder;
 }
 .membership button{
+
 border: 2px solid #C271FF;
 background: #C271FF;
 border-radius: 50px;
 color: #fff;
-padding: 15px 32px;
-text-transform: uppercase;
-font-weight: bold;
-margin-left: 630px;
-margin-top: 80px;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: -200px;
+  position: absolute;
+  margin-top: 50px;
 }
+
 .faq h4{
   padding: 50px;
   display: flex;
@@ -277,26 +281,35 @@ margin-top: 80px;
 .faq3{
   width: 40%;
 }
-.faq3 div h3{
+.faq3 div h3 p{
   margin-bottom: 10px;
   margin-top: 20px;
 }
-footer{
+.faq3 p{
+  color: black;
+  border-radius: 20px;
+}
+.footer{
   background-color: #071629;
   height: 250px;
 }
-footer div {
+.footer div {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 200px;
 }
-footer p{
+.footer p{
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: lighter;
   font-size: .7em;
   margin-top: 0;
-  color: #000;
+  color: #827d7d;
+}
+.social.icon i{
+  display: inline;
+  position:absolute;
+  color: #fff;
 }
