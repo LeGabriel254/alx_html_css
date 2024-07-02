@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+header{
+  font-size: 16px;
+  
+  
+}
+button{
+  background-color: #C271FF;
+  align-items: center;
+  }
+.body{
+  
+    background-image: url('c:\Users\Administrator\Desktop\Home page\Background.jpg');
+
+}
