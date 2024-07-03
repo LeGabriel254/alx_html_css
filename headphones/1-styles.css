@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +6,8 @@
 body {
   background-image: url("Background.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:contain;
+   max-height: auto;
 }
 nav{
   display: flex;
@@ -49,7 +50,7 @@ nav li,a:hover{
   font-size: 11px;
   padding-left: 85px;
 }
-#word button{
+#btn button{
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -61,10 +62,10 @@ nav li,a:hover{
   margin-top: -990px;
   display:inline;
 }
- #word button:hover{
+ #btn button:hover{
   opacity: 0.9;
  }
-#word p{
+#btn p{
   color: #beb5b5;
   font-weight: 500;
   padding: 20px;
@@ -73,11 +74,37 @@ nav li,a:hover{
   height: 30px;
   white-space: pre-wrap;
   }
-  /* Default styles */
-body {
-  font-size: 16px;
-}
+  #word h2{
+    padding: 50px;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
 
+  #word p{
+    padding-left: 200px;
+    font-size:  40px;
+    font-weight: 500;
+    color:rgb(red, green, blue);
+  }
+
+  .hero{
+    padding-top: 20px;
+    align-items: flex-start;
+    justify-content:stretch;
+    margin-top: 100px;
+  }
+
+  .container{
+    flex-direction: row;
+    align-content: flex-start;
+    position: relative;
+    padding-left: 20px;
+    align-items: self-start;
+   
+
+  }
 /* Media query for screens smaller than 600px */
 @media screen and (max-width: 480px) {
   body {
