@@ -18,7 +18,8 @@ nav{
 nav img{
   margin: 50px ; 
   display: flex;
-  
+  flex-direction: row-reverse;
+  align-items: center;
 }
 nav ul{
   list-style: none;
@@ -34,6 +35,17 @@ nav ul li,a{
 
 nav li,a:hover{
  color :#FF6565;
+}
+@media (max-width: 1000px) {
+  body {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 2em !important;
+  }
 }
 .title{
   color: aliceblue;
@@ -97,18 +109,22 @@ nav li,a:hover{
   }
 
   .container{
-    flex-direction: row;
-    align-content: flex-start;
-    position: relative;
-    padding-left: 20px;
-    align-items: self-start;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero img h3{
+    width: 67.59px;
+    height: 76.8px;
+    margin: 0 auto;
+    padding: 0 200em;
 
   }
-/* Media query for screens smaller than 600px */
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 12px;
-    max-width: max-content 1000px;
+  .hero p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 10px;
+
   }
-}
